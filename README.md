@@ -3,8 +3,8 @@ start to learn about reactjs
 
 build : lib.
 
-array : how to list the array.
-
 helloworld : hello world to reactjs.
+
+iterator : how to use iterator.
 
 requirejs : use reactjs by requirejs.
