@@ -10,3 +10,5 @@ helloworld : hello world to reactjs.
 iterator : how to use iterator.
 
 requirejs : use reactjs by requirejs.
+
+tabselector : how to build a tab selector.
