@@ -15,4 +15,4 @@ requirejs : use reactjs by requirejs.
 
 tabselector : how to build a tab selector.
 
-router : how to use react-router.But there are some BUG in it.
+router : how to use react-router.
