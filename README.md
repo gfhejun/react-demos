@@ -14,3 +14,5 @@ proptypes : we can use proptypes to tell the developers if the type of parameter
 requirejs : use reactjs by requirejs.
 
 tabselector : how to build a tab selector.
+
+router : how to use react-router.But there are some BUG in it.
