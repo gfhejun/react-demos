@@ -1,32 +1,32 @@
-//The lifestyle of component includes 3 states:
-//1.Mounting:already insert the real DOM;
-//2.Updating:restart to render;
-//3.Unmounting:already remove the real DOM;
+//组件生命周期包含三个状态
+//1.Mounting:已经插入真实DOM
+//2.Updating:重新渲染
+//3.Unmounting:已经删除真实DOM
 
 var Hello = React.createClass({
-    getInitialState: function () {
-        return{
-            opacity:1.0
+    getInitialState: function() {
+        return {
+            opacity: 1.0
         };
     },
 
-    //Function aaaWillbbb called before entering the state of bbb.
-    //Function aaaDidbbb called after entering the state of bbb.
-    componentDidMount: function () {
-        this.timer = setInterval(function () {
+    //Function aaaWillbbb do it before bbb
+    //Function aaaDidbbb do it after bbb.
+    componentDidMount: function() {
+        this.timer = setInterval(function() {
             var opacity = this.state.opacity;
             opacity -= 0.05;
-            if (opacity < 0.1){
+            if (opacity < 0.1) {
                 opacity = 1.0;
             }
             this.setState({
-                opacity:opacity
+                opacity: opacity
             });
-        }.bind(this),100);
+        }.bind(this), 100);
     },
 
-    render: function () {
-        return(
+    render: function() {
+        return (
             <div style={{opacity:this.state.opacity}}>
                 {this.props.name}
             </div>

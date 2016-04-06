@@ -1,17 +1,26 @@
-var heroes = [
-    {key:'BM',name:'Blade Master',race:'ORC'},
-    {key:'DH',name:'Demon Hunter',race:'NE'},
-    {key:'MK',name:'Mountain King',race:'HUM'},
-    {key:'DK',name:'Dead Knight',race:'UD'}
-];
+var heroes = [{
+    key: 'BM',
+    name: 'Blade Master',
+    race: 'ORC'
+}, {
+    key: 'DH',
+    name: 'Demon Hunter',
+    race: 'NE'
+}, {
+    key: 'MK',
+    name: 'Mountain King',
+    race: 'HUM'
+}, {
+    key: 'DK',
+    name: 'Dead Knight',
+    race: 'UD'
+}];
 
-//React.render is deprecated.
-//Now we can use ReactDOM.render instead.
 ReactDOM.render(
     <div>
         {
             heroes.map(function(hero){
-                //Each child in an array or iterator should have a unique "key" prop.
+                //遍历时，每一个子对象都需要有一个唯一的key，否则控制台会有警告信息
                 return <div key={hero.key}>I am {hero.name}. I come from {hero.race}!</div>
             })
         }

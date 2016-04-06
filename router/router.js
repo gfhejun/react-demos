@@ -3,7 +3,7 @@ var Route = ReactRouter.Route;
 var Link = ReactRouter.Link;
 
 var App = React.createClass({
-    render(){
+    render() {
         return (
             <div>
                 <nav>
@@ -22,7 +22,7 @@ var App = React.createClass({
 });
 
 var Home = React.createClass({
-    render(){
+    render() {
         return (
             <div>
                 <h2>This is home.</h2>
@@ -32,7 +32,7 @@ var Home = React.createClass({
 });
 
 var About = React.createClass({
-    render(){
+    render() {
         return (
             <div>
                 <h2>About</h2>
@@ -43,7 +43,7 @@ var About = React.createClass({
 });
 
 var Detail = React.createClass({
-    render(){
+    render() {
         return (
             <div>
                 <h2>This is detail.</h2>
@@ -53,7 +53,7 @@ var Detail = React.createClass({
 });
 
 var Double1 = React.createClass({
-    render(){
+    render() {
         return (
             <div>
                 <h2>This is double1.</h2>
@@ -63,7 +63,7 @@ var Double1 = React.createClass({
 });
 
 var Double2 = React.createClass({
-    render(){
+    render() {
         return (
             <div>
                 <h2>This is double2.</h2>
@@ -73,7 +73,7 @@ var Double2 = React.createClass({
 });
 
 var NoMatch = React.createClass({
-    render(){
+    render() {
         return (
             <div>
                 <h2>NoMatch!!!</h2>
@@ -81,12 +81,6 @@ var NoMatch = React.createClass({
         )
     }
 });
-
-
-//We can't set the route like this! It will show you About component when you visit Detail!
-//<Route path="about" component={About}>
-//    <Route path="detail" component={Detail}/>
-//</Route>
 
 ReactDOM.render(
     <Router>

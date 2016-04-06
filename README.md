@@ -1,18 +1,15 @@
 # react-demos
-start to learn about reactjs
 
-build : lib.
+component : 组件相关知识
 
-component : learn about the component.
+helloworld : hello world to reactjs
 
-helloworld : hello world to reactjs.
+iterator : react的迭代器
 
-iterator : how to use iterator.
+proptypes : 利用proptypes告诉开发者所需要的参数类型是否正确，但对于功能无影响
 
-proptypes : we can use proptypes to tell the developers if the type of parameters they provide are right.
+requirejs : react与requirejs的整合使用
 
-requirejs : use reactjs by requirejs.
+tabselector : tab selector
 
-tabselector : how to build a tab selector.
-
-router : how to use react-router.
+router : react的路由
